@@ -69,16 +69,14 @@ export default function SignInPage() {
                 <p>
                     <button id="sub_btn" type="submit" onClick={cekValidasi}>Login</button>
                 </p>
-            </form>
-            <div id="time"><p>Silahkan login kembali dalam {timer} </p></div>
-            <div class="captcha">
                 <Recaptcha
                     sitekey="6Ldw928iAAAAAMl3NbTiGpprK1YAc3N82oTFmlXn"
                     render="explicit"
                     onloadCallback={cekCaptcha}
                     onChange={cekCaptcha}
                 />
-            </div>
+            </form>
+            <div id="time"><p>Silahkan login kembali dalam {timer} </p></div>
             
             <footer>
                 <p>First time? <Link to="/register">Create an account</Link>.</p>
